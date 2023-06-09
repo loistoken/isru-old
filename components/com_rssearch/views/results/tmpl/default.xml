@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSSEARCH_RESULTS_VIEW" >
+		<message>
+			<![CDATA[COM_RSSEARCH_RESULTS_VIEW]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="module_id" 
+               type="sql"
+               default="0"
+               label="COM_RSSEARCH_PARAM_RSSEARCH_MODULE_LABEL"
+               description="COM_RSSEARCH_PARAM_RSSEARCH_MODULE_DESC"
+               query="SELECT id AS value, title as module_id FROM #__modules WHERE module = 'mod_rssearch' AND client_id = '0' AND published = '1'" />
+
+		</fieldset>
+	</fields>
+</metadata>

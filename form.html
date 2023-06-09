@@ -1,0 +1,948 @@
+<div class="uk-hidden">{error}</div>
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<fieldset class="formContainer uk-form-horizontal" id="rsform_{global:formid}_page_0">
+    <div class="uk-margin-large-bottom">
+        <h3 class="font">You should have to fill the required data in order to submit your application.</h3>
+        <div class="uk-alert uk-alert-danger font uk-margin-large-bottom">
+            <ul>
+                <li>Personal Information</li>
+                <li>Education Information</li>
+                <li>Choice of Program</li>
+                <li>Identification Certificate / Passport</li>
+                <li>Official Transcript</li>
+                <li>Copy of English proficiency exam (TOEFL, etc.)</li>
+                <li>Copy of the High School Diploma (A English translation should also be enclosed unless the Diploma is not in one of these languages)</li>
+                <li>Copy of your non-refundable application fee– receipt</li>
+                <li>High School transcript or evidence of graduation (for high schools abroad, official letter of accreditation issued by Province National Education Directorates)</li>
+                <li>Achievement and/or Advanced Placement test scores (if available)</li>
+                <li>University syllabus for the courses completed in previous undergraduate studies</li>
+                <li>A copy of passport for students who apply from universities abroad</li>
+                <li>Statement of purposeL</li>
+            </ul>
+        </div>
+        <div class="uk-margin rsform-block rsform-block-studenttype">
+            <div class="uk-form-controls formControls">
+                {studenttype:body}
+                <span class="formValidation">{studenttype:validation}</span>
+            </div>
+        </div>
+    </div>
+    <div class="rsform-block rsform-block-pagebreak1 uk-margin-large-bottom">
+        <div class="uk-form-controls formControls">
+            {pagebreak1:body}
+        </div>
+    </div>
+</fieldset>
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<fieldset class="formContainer uk-form-horizontal" id="rsform_{global:formid}_page_1">
+    <div class="uk-margin-large-bottom">
+        <h3 class="font">Personal Information</h3>
+        <div class="uk-child-width-1-1" uk-grid>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-firstname">
+                            <label class="uk-form-label formControlLabel" for="firstname"{if {firstname:description}} data-uk-tooltip="{pos:'top-left'}" title="{firstname:description}"{/if}>{firstname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {firstname:body}
+                                <span class="formValidation">{firstname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-middlename">
+                            <label class="uk-form-label formControlLabel" for="middlename"{if {middlename:description}} data-uk-tooltip="{pos:'top-left'}" title="{middlename:description}"{/if}>{middlename:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {middlename:body}
+                                <span class="formValidation">{middlename:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-lastname">
+                            <label class="uk-form-label formControlLabel" for="lastname"{if {lastname:description}} data-uk-tooltip="{pos:'top-left'}" title="{lastname:description}"{/if}>{lastname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {lastname:body}
+                                <span class="formValidation">{lastname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-email">
+                            <label class="uk-form-label formControlLabel" for="email"{if {email:description}} data-uk-tooltip="{pos:'top-left'}" title="{email:description}"{/if}>{email:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {email:body}
+                                <span class="formValidation">{email:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-countryofbirth">
+                            <label class="uk-form-label formControlLabel" for="countryofbirth"{if {countryofbirth:description}} data-uk-tooltip="{pos:'top-left'}" title="{countryofbirth:description}"{/if}>{countryofbirth:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {countryofbirth:body}
+                                <span class="formValidation">{countryofbirth:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-nationality">
+                            <label class="uk-form-label formControlLabel" for="nationality"{if {nationality:description}} data-uk-tooltip="{pos:'top-left'}" title="{nationality:description}"{/if}>{nationality:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {nationality:body}
+                                <span class="formValidation">{nationality:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-nationalid">
+                            <label class="uk-form-label formControlLabel" for="nationalid"{if {nationalid:description}} data-uk-tooltip="{pos:'top-left'}" title="{nationalid:description}"{/if}>{nationalid:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {nationalid:body}
+                                <span class="formValidation">{nationalid:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-gender">
+                            <label class="uk-form-label formControlLabel" for="gender"{if {gender:description}} data-uk-tooltip="{pos:'top-left'}" title="{gender:description}"{/if}>{gender:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {gender:body}
+                                <span class="formValidation">{gender:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-birthdate">
+                            <label class="uk-form-label formControlLabel" for="birthdate"{if {birthdate:description}} data-uk-tooltip="{pos:'top-left'}" title="{birthdate:description}"{/if}>{birthdate:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {birthdate:body}
+                                <span class="formValidation">{birthdate:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-mobile">
+                            <label class="uk-form-label formControlLabel" for="mobile"{if {mobile:description}} data-uk-tooltip="{pos:'top-left'}" title="{mobile:description}"{/if}>{mobile:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {mobile:body}
+                                <span class="formValidation">{mobile:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-phone">
+                            <label class="uk-form-label formControlLabel" for="phone"{if {phone:description}} data-uk-tooltip="{pos:'top-left'}" title="{phone:description}"{/if}>{phone:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {phone:body}
+                                <span class="formValidation">{phone:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-disablility">
+                            <label class="uk-form-label formControlLabel" for="disablility"{if {disablility:description}} data-uk-tooltip="{pos:'top-left'}" title="{disablility:description}"{/if}>{disablility:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {disablility:body}
+                                <span class="formValidation">{disablility:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-flname">
+                            <label class="uk-form-label formControlLabel" for="flname"{if {flname:description}} data-uk-tooltip="{pos:'top-left'}" title="{flname:description}"{/if}>{flname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {flname:body}
+                                <span class="formValidation">{flname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-fmname">
+                            <label class="uk-form-label formControlLabel" for="fmname"{if {fmname:description}} data-uk-tooltip="{pos:'top-left'}" title="{fmname:description}"{/if}>{fmname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {fmname:body}
+                                <span class="formValidation">{fmname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-fname">
+                            <label class="uk-form-label formControlLabel" for="fname"{if {fname:description}} data-uk-tooltip="{pos:'top-left'}" title="{fname:description}"{/if}>{fname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {fname:body}
+                                <span class="formValidation">{fname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-mname">
+                            <label class="uk-form-label formControlLabel" for="mname"{if {mname:description}} data-uk-tooltip="{pos:'top-left'}" title="{mname:description}"{/if}>{mname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {mname:body}
+                                <span class="formValidation">{mname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-mmname">
+                            <label class="uk-form-label formControlLabel" for="mmname"{if {mmname:description}} data-uk-tooltip="{pos:'top-left'}" title="{mmname:description}"{/if}>{mmname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {mmname:body}
+                                <span class="formValidation">{mmname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-mlname">
+                            <label class="uk-form-label formControlLabel" for="mlname"{if {mlname:description}} data-uk-tooltip="{pos:'top-left'}" title="{mlname:description}"{/if}>{mlname:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {mlname:body}
+                                <span class="formValidation">{mlname:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-country">
+                            <label class="uk-form-label formControlLabel" for="country"{if {country:description}} data-uk-tooltip="{pos:'top-left'}" title="{country:description}"{/if}>{country:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {country:body}
+                                <span class="formValidation">{country:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-city">
+                            <label class="uk-form-label formControlLabel" for="city"{if {city:description}} data-uk-tooltip="{pos:'top-left'}" title="{city:description}"{/if}>{city:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {city:body}
+                                <span class="formValidation">{city:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-postalcode">
+                            <label class="uk-form-label formControlLabel" for="postalcode"{if {postalcode:description}} data-uk-tooltip="{pos:'top-left'}" title="{postalcode:description}"{/if}>{postalcode:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {postalcode:body}
+                                <span class="formValidation">{postalcode:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-addressline1">
+                            <label class="uk-form-label formControlLabel" for="addressline1"{if {addressline1:description}} data-uk-tooltip="{pos:'top-left'}" title="{addressline1:description}"{/if}>{addressline1:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {addressline1:body}
+                                <span class="formValidation">{addressline1:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-addressline2">
+                            <label class="uk-form-label formControlLabel" for="addressline2"{if {addressline2:description}} data-uk-tooltip="{pos:'top-left'}" title="{addressline2:description}"{/if}>{addressline2:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {addressline2:body}
+                                <span class="formValidation">{addressline2:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-addressline3">
+                            <label class="uk-form-label formControlLabel" for="addressline3"{if {addressline3:description}} data-uk-tooltip="{pos:'top-left'}" title="{addressline3:description}"{/if}>{addressline3:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {addressline3:body}
+                                <span class="formValidation">{addressline3:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-margin rsform-block rsform-block-addressline4">
+                            <label class="uk-form-label formControlLabel" for="addressline4"{if {addressline4:description}} data-uk-tooltip="{pos:'top-left'}" title="{addressline4:description}"{/if}>{addressline4:caption}</label>
+                            <div class="uk-form-controls formControls">
+                                {addressline4:body}
+                                <span class="formValidation">{addressline4:validation}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rsform-block rsform-block-pagebreak2 uk-margin-large-bottom">
+        <div class="uk-form-controls formControls">
+            {pagebreak2:body}
+        </div>
+    </div>
+</fieldset>
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<fieldset class="formContainer uk-form-horizontal" id="rsform_{global:formid}_page_2">
+    <div class="uk-margin-large-bottom">
+        <h3 class="font">Education</h3>
+        <div class="uk-border-rounded uk-text-12 font uk-alert">List all schools you have attended (including high school and college) full-time for one academic year or more, and any degree program in which you are currently enrolled. List schools in chronological order, beginning with most recent.</div>
+        <div class="uk-border-rounded uk-text-12 font uk-alert uk-alert-danger">Please use uppercase when you are typing the name of Institution.</div>
+        <table class="uk-table uk-table-divider uk-table-justify uk-table-small">
+            <thead>
+            <tr>
+                <th class="font uk-text-12 uk-text-center">Type</th>
+                <th class="font uk-text-12 uk-text-center">Name of the Institution</th>
+                <th class="font uk-text-12 uk-text-center">Studied Subjects / Major</th>
+                <th class="font uk-text-12 uk-text-center">Location (City and Country)</th>
+                <th class="font uk-text-12 uk-text-center">Entrance Date</th>
+                <th class="font uk-text-12 uk-text-center">Leaving or Graduation Date</th>
+                <th class="font uk-te xt-12 uk-text-center">Reasons for Leaving</th>
+                <th class="font uk-text-12 uk-text-center">GPA / Scale</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{edur1c1:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c2:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c3:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c4:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c5:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c6:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c7:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur1c8:body}<span class="formValidation">{edur1c1:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{edur2c1:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c2:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c3:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c4:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c5:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c6:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c7:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur2c8:body}<span class="formValidation">{edur1c1:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{edur3c1:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c2:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c3:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c4:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c5:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c6:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c7:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur3c8:body}<span class="formValidation">{edur1c1:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{edur4c1:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c2:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c3:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c4:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c5:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c6:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c7:body}<span class="formValidation">{edur1c1:validation}</span></td>
+                <td>{edur4c8:body}<span class="formValidation">{edur1c1:validation}</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Languages</h3>
+        <table class="uk-table uk-table-divider uk-table-justify uk-table-small uk-table-middle">
+            <tbody>
+            <tr>
+                <td class="uk-text-center">{lang1:body}<span class="formValidation">{lang1:validation}</span></td>
+                <td class="uk-text-center">{lang1level:body}<span class="formValidation">{lang1level:validation}</span></td>
+            </tr>
+            <tr>
+                <td class="uk-text-center">{lang2:body}<span class="formValidation">{lang2:validation}</span></td>
+                <td class="uk-text-center">{lang2level:body}<span class="formValidation">{lang2level:validation}</span></td>
+            </tr>
+            <tr>
+                <td class="uk-text-center">{lang3:body}<span class="formValidation">{lang3:validation}</span></td>
+                <td class="uk-text-center">{lang3level:body}<span class="formValidation">{lang3level:validation}</span></td>
+            </tr>
+            <tr>
+                <td class="uk-text-center">{lang4:body}<span class="formValidation">{lang4:validation}</span></td>
+                <td class="uk-text-center">{lang4level:body}<span class="formValidation">{lang4level:validation}</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="rsform-block rsform-block-pagebreak3 uk-margin-large-bottom">
+        <div class="uk-form-controls formControls">
+            {pagebreak3:body}
+        </div>
+    </div>
+</fieldset>
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<fieldset class="formContainer uk-form-horizontal" id="rsform_{global:formid}_page_3">
+    <div class="uk-margin-large-bottom">
+        <h3 class="font">Test Scores and Diploma</h3>
+        <table class="uk-table uk-table-justify uk-table-small uk-table-middle">
+            <tr>
+                <th class="uk-width-1-6 font" rowspan="2">SAT I (OLD)</th>
+                <th class="uk-width-1-6 font">Date</th>
+                <th class="uk-width-1-6 font">Total Score</th>
+                <th class="uk-width-1-6 font">Mathematics</th>
+                <th class="uk-width-1-6 font">Critical Reading</th>
+                <th class="uk-width-1-6 font">Writing</th>
+            </tr>
+            <tr>
+                <td>{dipr1f1:body}<span class="formValidation">{dipr1f1:validation}</span></td>
+                <td>{dipr1f2:body}<span class="formValidation">{dipr1f2:validation}</span></td>
+                <td>{dipr1f3:body}<span class="formValidation">{dipr1f3:validation}</span></td>
+                <td>{dipr1f4:body}<span class="formValidation">{dipr1f4:validation}</span></td>
+                <td>{dipr1f5:body}<span class="formValidation">{dipr1f5:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">SAT I (NEW)</th>
+                <th class="font">Date</th>
+                <th class="font">Total Score</th>
+                <th class="font" colspan="2">Evidence-Based Reading and Writing</th>
+                <th class="font">Math</th>
+            </tr>
+            <tr>
+                <td>{dipr2f1:body}<span class="formValidation">{dipr2f1:validation}</span></td>
+                <td>{dipr2f2:body}<span class="formValidation">{dipr2f2:validation}</span></td>
+                <td colspan="2">{dipr2f3:body}<span class="formValidation">{dipr2f3:validation}</span></td>
+                <td>{dipr2f4:body}<span class="formValidation">{dipr2f4:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">IB (International Baccalaureate</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Diploma Grade</th>
+            </tr>
+            <tr>
+                <td>{dipr3f1:body}<span class="formValidation">{dipr3f1:validation}</span></td>
+                <td colspan="4">{dipr3f2:body}<span class="formValidation">{dipr3f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <table class="uk-table uk-table-justify uk-table-small uk-table-middle">
+                        <tbody>
+                        <tr>
+                            <th class="uk-width-1-6 font" rowspan="2">ACT (American College Testing)</th>
+                            <th class="uk-width-1-6 font">Date</th>
+                            <th class="uk-width-1-6 font">English</th>
+                            <th class="uk-width-1-6 font">Reading</th>
+                            <th class="uk-width-1-6 font">Writing (OLD Before September 2016)</th>
+                            <th class="uk-width-1-6 font">Writing (OLD After September 2016)</th>
+                            <th class="uk-width-1-6 font">Math</th>
+                            <th class="uk-width-1-6 font">Science</th>
+                            <th class="uk-width-1-6 font">Composite Score</th>
+                        </tr>
+                        <tr>
+                            <td>{dipr4f1:body}<span class="formValidation">{dipr4f1:validation}</span></td>
+                            <td>{dipr4f2:body}<span class="formValidation">{dipr4f2:validation}</span></td>
+                            <td>{dipr4f3:body}<span class="formValidation">{dipr4f3:validation}</span></td>
+                            <td>{dipr4f4:body}<span class="formValidation">{dipr4f4:validation}</span></td>
+                            <td>{dipr4f5:body}<span class="formValidation">{dipr4f5:validation}</span></td>
+                            <td>{dipr4f6:body}<span class="formValidation">{dipr4f6:validation}</span></td>
+                            <td>{dipr4f7:body}<span class="formValidation">{dipr4f7:validation}</span></td>
+                            <td>{dipr4f8:body}<span class="formValidation">{dipr4f8:validation}</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">ABITUR</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Diploma Grade</th>
+            </tr>
+            <tr>
+                <td>{dipr5f1:body}<span class="formValidation">{dipr5f1:validation}</span></td>
+                <td colspan="4">{dipr5f2:body}<span class="formValidation">{dipr5f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">MATURA</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Diploma Grade</th>
+            </tr>
+            <tr>
+                <td>{dipr6f1:body}<span class="formValidation">{dipr6f1:validation}</span></td>
+                <td colspan="4">{dipr6f2:body}<span class="formValidation">{dipr6f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+
+            <tr>
+                <th class="font" rowspan="15" style="vertical-align: top">GCE</th>
+                <th class="font">Date</th>
+                <th colspan="2" class="font">Level Subject</th>
+                <th colspan="2" class="font">Grade</th>
+            </tr>
+            <tr>
+                <td>{gcer1c1:body}<span class="formValidation">{gcer1c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Arabic</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer1c2:body}<span class="formValidation">{gcer1c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer2c1:body}<span class="formValidation">{gcer2c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Art & Design</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer2c2:body}<span class="formValidation">{gcer2c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer3c1:body}<span class="formValidation">{gcer3c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Biology</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer3c2:body}<span class="formValidation">{gcer3c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer4c1:body}<span class="formValidation">{gcer4c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Chemistry</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer4c2:body}<span class="formValidation">{gcer4c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer5c1:body}<span class="formValidation">{gcer5c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Economics</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer5c2:body}<span class="formValidation">{gcer5c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer6c1:body}<span class="formValidation">{gcer6c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">French</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer6c2:body}<span class="formValidation">{gcer6c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer7c1:body}<span class="formValidation">{gcer7c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">History</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer7c2:body}<span class="formValidation">{gcer7c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer8c1:body}<span class="formValidation">{gcer8c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Islamiyat</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer8c2:body}<span class="formValidation">{gcer8c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer9c1:body}<span class="formValidation">{gcer9c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">LITERATURE IN ENGLISH</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer9c2:body}<span class="formValidation">{gcer9c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer10c1:body}<span class="formValidation">{gcer10c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Math</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer10c2:body}<span class="formValidation">{gcer10c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer11c1:body}<span class="formValidation">{gcer11c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Physics</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer11c2:body}<span class="formValidation">{gcer11c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer12c1:body}<span class="formValidation">{gcer12c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Pakistan Studies</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer12c2:body}<span class="formValidation">{gcer12c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer13c1:body}<span class="formValidation">{gcer13c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">PSYCHOLOGY</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer13c2:body}<span class="formValidation">{gcer13c2:validation}</span></td>
+            </tr>
+            <tr>
+                <td>{gcer14c1:body}<span class="formValidation">{gcer14c1:validation}</span></td>
+                <td colspan="2" class="font uk-text-small uk-text-black">Total</td>
+                <td colspan="2" class="font uk-text-small uk-text-black">{gcer14c2:body}<span class="formValidation">{gcer14c2:validation}</span></td>
+            </tr>
+
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">French Baccalaureate</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Diploma Grade</th>
+            </tr>
+            <tr>
+                <td>{dipr7f1:body}<span class="formValidation">{dipr7f1:validation}</span></td>
+                <td colspan="4">{dipr7f2:body}<span class="formValidation">{dipr7f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">KUDRAT</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Test Score</th>
+            </tr>
+            <tr>
+                <td>{dipr8f1:body}<span class="formValidation">{dipr8f1:validation}</span></td>
+                <td colspan="4">{dipr8f2:body}<span class="formValidation">{dipr8f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">ALSHAHADA</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Test Score</th>
+            </tr>
+            <tr>
+                <td>{dipr9f1:body}<span class="formValidation">{dipr9f1:validation}</span></td>
+                <td colspan="4">{dipr9f2:body}<span class="formValidation">{dipr9f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="6"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="font" rowspan="2">TAWJIHI</th>
+                <th class="font">Date</th>
+                <th class="font" colspan="4">Test Score</th>
+            </tr>
+            <tr>
+                <td>{dipr10f1:body}<span class="formValidation">{dipr10f1:validation}</span></td>
+                <td colspan="4">{dipr10f2:body}<span class="formValidation">{dipr10f2:validation}</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="rsform-block rsform-block-pagebreak4 uk-margin-large-bottom">
+        <div class="uk-form-controls formControls">
+            {pagebreak4:body}
+        </div>
+    </div>
+</fieldset>
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<fieldset class="formContainer uk-form-horizontal" id="rsform_{global:formid}_page_4">
+    <div class="uk-margin-medium-bottom">
+        <h3 class="font">Proficiency in English</h3>
+        <table class="uk-table uk-table-justify uk-table-small uk-table-middle">
+            <tr>
+                <th class="uk-width-1-6 font" rowspan="2">TOFEL</th>
+                <th class="uk-width-1-6 font">Date</th>
+                <th class="uk-width-1-6 font">PBT (Paper Based)</th>
+                <th class="uk-width-1-6 font">TWE (Test of Written English)</th>
+                <th class="uk-width-1-6 font">IBT (Internet Based)</th>
+                <th class="uk-width-1-6 font">WRT (Writing)</th>
+                <th class="uk-width-1-6 font">CBT (Computer Based)</th>
+            </tr>
+            <tr>
+                <td>{engr1f1:body}<span class="formValidation">{engr1f1:validation}</span></td>
+                <td>{engr1f2:body}<span class="formValidation">{engr1f2:validation}</span></td>
+                <td>{engr1f3:body}<span class="formValidation">{engr1f3:validation}</span></td>
+                <td>{engr1f4:body}<span class="formValidation">{engr1f4:validation}</span></td>
+                <td>{engr1f5:body}<span class="formValidation">{engr1f5:validation}</span></td>
+                <td>{engr1f6:body}<span class="formValidation">{engr1f6:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="7"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="uk-width-1-6 font" rowspan="2">ÜDS/YDS/E-YDS</th>
+                <th class="uk-width-1-6 font">Date</th>
+                <th class="uk-width-1-6 font">Test Score</th>
+            </tr>
+            <tr>
+                <td>{engr2f1:body}<span class="formValidation">{engr2f1:validation}</span></td>
+                <td colspan="5">{engr2f2:body}<span class="formValidation">{engr2f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="7"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+            <tr>
+                <th class="uk-width-1-6 font" rowspan="2">CAE</th>
+                <th class="uk-width-1-6 font">Date</th>
+                <th class="uk-width-1-6 font">Test Score</th>
+            </tr>
+            <tr>
+                <td>{engr3f1:body}<span class="formValidation">{engr3f1:validation}</span></td>
+                <td colspan="5">{engr3f2:body}<span class="formValidation">{engr3f2:validation}</span></td>
+            </tr>
+            <tr>
+                <td colspan="7"><hr class="uk-margin-medium-top uk-margin-medium-bottom"></td>
+            </tr>
+        </table>
+        <div>
+            <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <div class="uk-margin rsform-block rsform-block-choiceofprogram">
+                        <label class="uk-form-label formControlLabel" for="choiceofprogram"{if {choiceofprogram:description}} data-uk-tooltip="{pos:'top-left'}" title="{choiceofprogram:description}"{/if}>{choiceofprogram:caption}</label>
+                        <div class="uk-form-controls formControls">
+                            {choiceofprogram:body}
+                            <span class="formValidation">{choiceofprogram:validation}</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-margin rsform-block rsform-block-listofprogram">
+                        <label class="uk-form-label formControlLabel" for="listofprogram"{if {listofprogram:description}} data-uk-tooltip="{pos:'top-left'}" title="{listofprogram:description}"{/if}>{listofprogram:caption}</label>
+                        <div class="uk-form-controls formControls">
+                            {listofprogram:body}
+                            <span class="formValidation">{listofprogram:validation}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rsform-block rsform-block-pagebreak5 uk-margin-large-bottom">
+        <div class="uk-form-controls formControls">
+            {pagebreak5:body}
+        </div>
+    </div>
+</fieldset>
+
+<!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+<fieldset class="formContainer uk-form-horizontal" id="rsform_{global:formid}_page_5">
+    <div class="uk-margin-large-bottom">
+        <h3 class="font">Activities</h3>
+        <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-grid-divider" uk-grid>
+            <div>
+                <h4 class="font uk-text-black uk-margin-small-bottom">Awards/Honors</h4>
+                <p class="font uk-text-12 uk-text-muted uk-margin-remove">List any awards or honors you received in the past 5 years.</p>
+                <table class="uk-table uk-table-justify uk-table-small uk-table-middle">
+                    <thead>
+                    <tr>
+                        <th class="uk-width-1-2 fonr">Subject</th>
+                        <th class="uk-width-1-2 fonr">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{acts1:body}<span class="formValidation">{acts1:validation}</span></td>
+                        <td>{actd1:body}<span class="formValidation">{actd1:validation}</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h4 class="font uk-text-black uk-margin-small-bottom">Extra-curricular interests and activities</h4>
+                <p class="font uk-text-12 uk-text-muted uk-margin-remove">List your extra-curricular interests and activities</p>
+                <table class="uk-table uk-table-justify uk-table-small uk-table-middle">
+                    <thead>
+                    <tr>
+                        <th class="uk-width-1-2 fonr">Subject</th>
+                        <th class="uk-width-1-2 fonr">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{acts2:body}<span class="formValidation">{acts2:validation}</span></td>
+                        <td>{actd2:body}<span class="formValidation">{actd2:validation}</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h3 class="font">REQUIRED DOCUMENTS</h3>
+        <div class="uk-border-rounded uk-text-12 font uk-alert">Please note that the originals of the above documents will be requested in the enrollment process.</div>
+        <div class="uk-border-rounded uk-text-12 font uk-alert uk-alert-warning">Files should be in maximum size of 500KB.</div>
+        <table class="uk-table uk-table-large uk-table-responsive uk-table-striped uk-margin-large-bottom">
+            <tbody>
+            <tr>
+                <td class="uk-width-1-2">
+                    <div class="uk-margin rsform-block rsform-block-upload1">
+                        <h5 class="font uk-text-12">{upload1:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload1:body}
+                            <span class="formValidation">{upload1:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td class="uk-width-1-2">
+                    <div class="uk-margin rsform-block rsform-block-upload2">
+                        <h5 class="font uk-text-12">{upload2:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload2:body}
+                            <span class="formValidation">{upload2:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload3">
+                        <h5 class="font uk-text-12">{upload3:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload3:body}
+                            <span class="formValidation">{upload3:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload4">
+                        <h5 class="font uk-text-12">{upload4:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload4:body}
+                            <span class="formValidation">{upload4:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload5">
+                        <h5 class="font uk-text-12">{upload5:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload5:body}
+                            <span class="formValidation">{upload5:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload6">
+                        <h5 class="font uk-text-12">{upload6:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload6:body}
+                            <span class="formValidation">{upload6:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload7">
+                        <h5 class="font uk-text-12">{upload7:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload7:body}
+                            <span class="formValidation">{upload7:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload8">
+                        <h5 class="font uk-text-12">{upload8:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload8:body}
+                            <span class="formValidation">{upload8:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload9">
+                        <h5 class="font uk-text-12">{upload9:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload9:body}
+                            <span class="formValidation">{upload9:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload10">
+                        <h5 class="font uk-text-12">{upload10:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload10:body}
+                            <span class="formValidation">{upload10:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload11">
+                        <h5 class="font uk-text-12">{upload11:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload11:body}
+                            <span class="formValidation">{upload11:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload12">
+                        <h5 class="font uk-text-12">{upload12:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload12:body}
+                            <span class="formValidation">{upload12:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload13">
+                        <h5 class="font uk-text-12">{upload13:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload13:body}
+                            <span class="formValidation">{upload13:validation}</span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="uk-margin rsform-block rsform-block-upload14">
+                        <h5 class="font uk-text-12">{upload14:caption}</h5>
+                        <div class="uk-form-controls formControls">
+                            {upload14:body}
+                            <span class="formValidation">{upload14:validation}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="uk-margin rsform-block rsform-block-lastquestions1">
+            <label class="uk-form-label formControlLabel" for="lastquestions1"{if {lastquestions1:description}} data-uk-tooltip="{pos:'top-left'}" title="{lastquestions1:description}"{/if}>{lastquestions1:caption}</label>
+            <div class="uk-form-controls formControls">
+                {lastquestions1:body}
+                <span class="formValidation">{lastquestions1:validation}</span>
+            </div>
+        </div>
+        <div class="uk-margin rsform-block rsform-block-lastquestions2">
+            <label class="uk-form-label formControlLabel" for="lastquestions2"{if {lastquestions2:description}} data-uk-tooltip="{pos:'top-left'}" title="{lastquestions2:description}"{/if}>{lastquestions2:caption}</label>
+            <div class="uk-form-controls formControls">
+                {lastquestions2:body}
+                <span class="formValidation">{lastquestions2:validation}</span>
+            </div>
+        </div>
+        <div class="uk-margin rsform-block rsform-block-lastquestions3">
+            <label class="uk-form-label formControlLabel" for="lastquestions3"{if {lastquestions3:description}} data-uk-tooltip="{pos:'top-left'}" title="{lastquestions3:description}"{/if}>{lastquestions3:caption}</label>
+            <div class="uk-form-controls formControls">
+                {lastquestions3:body}
+                <span class="formValidation">{lastquestions3:validation}</span>
+            </div>
+        </div>
+        <h3 class="font">Application Status</h3>
+        <div class="uk-border-rounded uk-text-12 font uk-text-black uk-alert">Once you have completed this application form, please read the following statements carefully. By signing this application form you confirm your acceptance of these statements. If you do not sign this form, we cannot process your application.</div>
+        <div class="uk-border-rounded uk-text-12 font uk-text-black uk-alert">{terms:body}<span class="formValidation">{terms:validation}</span></div>
+        <div class="uk-border-rounded uk-text-12 font uk-text-black uk-alert">I confirm that the required documents submitted as part of this application are entirely my own original work, except where clearly indicated otherwise, and do not include any plagiarised elements.
+        </div>
+    </div>
+    <div class="uk-margin rsform-block rsform-block-submit uk-margin-large-bottom">
+        <label class="uk-form-label formControlLabel" for="submit"{if {submit:description}} data-uk-tooltip="{pos:'top-left'}" title="{submit:description}"{/if}>{submit:caption}</label>
+        <div class="uk-form-controls formControls">
+            {submit:body}
+            <span class="formValidation">{submit:validation}</span>
+        </div>
+    </div>
+</fieldset>

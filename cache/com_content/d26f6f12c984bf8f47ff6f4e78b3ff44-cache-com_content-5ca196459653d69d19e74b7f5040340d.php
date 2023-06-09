@@ -1,0 +1,19 @@
+<?php die("Access Denied"); ?>#x#a:5:{s:4:"body";s:1902:"<div class="oohohohohohoho item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB" />
+	
+		
+						
+		
+	
+	
+		
+									<div itemprop="articleBody">
+		<p>Each curriculum has a nominal duration during which students should complete their studies.The nominal duration is 3 years for Bachelor’s programmes and 2 years for Master’s programmes.</p>
+<p>As a student, you will plan your studies based on the curriculum, timetables, your own possibilities and development needs. In order to complete your studies within the nominal study period, students shall pass subjects in the amount of 30 ECTS credits per semester and 60 ECTS credits per year on average.1 European credit point in Estonia corresponds to 1 ECTS credit (Estonia is using the European credit transfer and accumulation system). One European credit point is calculated as 26 hours of work. This may be awarded for a lecture series, independent research, examination, home assignments, tests etc. A curriculum is comprised of a set of modules.</p>
+<p>The module of introductory courses (or general subjects) provides students with a general overview of the subject area. Specialty modules for International Business Administration students focus on providing students with specialty knowledge. Entrepreneurship and Business and Business Administration and Languages students can also choose an elective module, which will give them an overview of interesting specialization. Modules consist of subjects. Subjects are divided into compulsory (covering essential elements of a curriculum), elective (chosen by the student from the list given in the study programme) and optional courses (chosen by the students from any study programme)Student who has minimal study load is an extern who does not have the student status and is not obliged to attend the courses.</p> 	</div>
+
+	
+							</div>
+";s:4:"head";a:12:{s:5:"title";s:19:"ISRU  - About Study";s:11:"description";N;s:4:"link";s:0:"";s:8:"metaTags";a:2:{s:10:"http-equiv";a:1:{s:12:"content-type";s:24:"text/html; charset=utf-8";}s:4:"name";a:7:{s:8:"keywords";N;s:6:"rights";N;s:8:"og:title";s:11:"About Study";s:7:"og:type";s:7:"article";s:6:"og:url";s:37:"https://isru.ac/old/study/about-study";s:12:"og:site_name";s:5:"ISRU ";s:6:"author";s:10:"Super User";}}s:5:"links";a:0:{}s:11:"styleSheets";a:0:{}s:5:"style";a:0:{}s:7:"scripts";a:4:{s:31:"/old/media/jui/js/jquery.min.js";a:2:{s:4:"type";s:15:"text/javascript";s:7:"options";a:6:{s:7:"version";s:4:"auto";s:8:"relative";b:1;s:11:"detectDebug";b:0;s:9:"framework";b:0;s:8:"pathOnly";b:0;s:13:"detectBrowser";b:1;}}s:38:"/old/media/jui/js/jquery-noconflict.js";a:2:{s:4:"type";s:15:"text/javascript";s:7:"options";a:6:{s:7:"version";s:4:"auto";s:8:"relative";b:1;s:9:"framework";b:0;s:8:"pathOnly";b:0;s:13:"detectBrowser";b:1;s:11:"detectDebug";b:1;}}s:39:"/old/media/jui/js/jquery-migrate.min.js";a:2:{s:4:"type";s:15:"text/javascript";s:7:"options";a:6:{s:7:"version";s:4:"auto";s:8:"relative";b:1;s:11:"detectDebug";b:0;s:9:"framework";b:0;s:8:"pathOnly";b:0;s:13:"detectBrowser";b:1;}}s:31:"/old/media/system/js/caption.js";a:2:{s:4:"type";s:15:"text/javascript";s:7:"options";a:6:{s:7:"version";s:4:"auto";s:8:"relative";b:1;s:9:"framework";b:0;s:8:"pathOnly";b:0;s:13:"detectBrowser";b:1;s:11:"detectDebug";b:1;}}}s:6:"script";a:1:{s:15:"text/javascript";s:79:"jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});";}s:6:"custom";a:0:{}s:10:"scriptText";a:0:{}s:13:"scriptOptions";a:0:{}}s:13:"mime_encoding";s:9:"text/html";s:7:"pathway";a:2:{i:0;O:8:"stdClass":2:{s:4:"name";s:5:"Study";s:4:"link";s:82:"index.php?option=com_content&view=category&layout=university:pages&id=8&Itemid=158";}i:1;O:8:"stdClass":2:{s:4:"name";s:11:"About Study";s:4:"link";s:0:"";}}s:6:"module";a:0:{}}

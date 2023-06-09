@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_slideshow</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+
+	<files>
+		<filename module="mod_slideshow">mod_slideshow.php</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="sidenav" type="radio" label="Side Nav" class="btn-group btn-group-yesno" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="dotnav" type="radio" label="Dot Nav" class="btn-group btn-group-yesno" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="animation" type="list" label="Animation" default="push">
+					<option value="slide">Slide</option>
+					<option value="fade">Fade</option>
+					<option value="scale">Scale</option>
+					<option value="pull">Pull</option>
+					<option value="push">Push</option>
+				</field>
+				<field name="autoplay" type="radio" label="Autoplay" class="btn-group btn-group-yesno" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field type="text" name="interval" label="Interval" default="5000" showon="autoplay:1" />
+				<field type="text" name="ratio" label="Ratio" default="16:9" />
+				<field name="slides" type="repeatable" icon="list" label="Slides">
+					<fieldset hidden="true" name="slides" repeat="true">
+						<field name="img" class="width-100" type="media" label="Image" />
+						<field name="title" type="text" label="Title" class="width-100" />
+						<field name="text" type="text" label="Text" class="width-100" />
+						<field name="url" type="text" label="URL" class="width-100" />
+						<field name="pos" type="list" label="Position" class="width-100" default="center">
+							<option value="center">Center</option>
+							<option value="top">Top</option>
+							<option value="bottom">Bottom</option>
+							<option value="left">Left</option>
+							<option value="right">Right</option>
+							<option value="center-right">Center Right</option>
+							<option value="center-left">Center Left</option>
+							<option value="top-center">Top Center</option>
+							<option value="top-right">Top Right</option>
+							<option value="top-left">Top Left</option>
+							<option value="bottom-center">Bottom Center</option>
+							<option value="bottom-right">Bottom Right</option>
+							<option value="bottom-left">Bottom Left</option>
+						</field>
+						<field name="overlay" type="list" label="Overlay" class="width-50" default="0">
+							<option value="1">JYES</option>
+							<option value="0">JNO</option>
+						</field>
+						<field name="overlaymargin" type="list" label="Margin" class="width-50" default="0">
+							<option value="1">JYES</option>
+							<option value="0">JNO</option>
+						</field>
+					</fieldset>
+				</field>
+			</fieldset>
+			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+				<field
+					name="prepare_content"
+					type="radio"
+					label="MOD_CUSTOM_FIELD_PREPARE_CONTENT_LABEL"
+					description="MOD_CUSTOM_FIELD_PREPARE_CONTENT_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="backgroundimage"
+					type="media"
+					label="MOD_CUSTOM_FIELD_BACKGROUNDIMAGE_LABEL"
+					description="MOD_BACKGROUNDIMAGE_FIELD_LOGO_DESC"
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
